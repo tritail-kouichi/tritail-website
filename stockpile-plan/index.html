@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>無料防災備蓄計画書作成 | 従業員数から必要数量を自動計算 | TriTail合同会社</title>
+  <meta name="description" content="従業員数・拠点数・希望備蓄日数を入力するだけで、保存水・保存食・簡易トイレなど全品目の必要数量を自動計算。企業向け防災備蓄計画書を無料で作成できます。">
+  <link rel="canonical" href="https://tritail.co.jp/stockpile-plan/">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://tritail.co.jp/stockpile-plan/">
+  <meta property="og:title"       content="無料防災備蓄計画書作成 | 従業員数から必要数量を自動計算 | TriTail">
+  <meta property="og:description" content="従業員数・拠点数・備蓄日数を入力するだけで全品目の必要数量を自動計算。企業向け防災備蓄計画書を無料作成。">
+  <meta property="og:image"       content="https://tritail.co.jp/assets/images/ogp.jpg">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/disaster.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "トップ",    "item": "https://tritail.co.jp/" },
+      { "@type": "ListItem", "position": 2, "name": "防災備蓄事業", "item": "https://tritail.co.jp/disaster/" },
+      { "@type": "ListItem", "position": 3, "name": "無料防災備蓄計画書作成", "item": "https://tritail.co.jp/stockpile-plan/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "備蓄の基準量はどこで決まりますか？",
+        "acceptedAnswer": { "@type": "Answer", "text": "内閣府・東京都の防災指針に基づき、飲料水1人1日3L、食料1人1日3食、備蓄期間3〜7日分を基本として計算しています。" }
+      },
+      {
+        "@type": "Question",
+        "name": "計算結果は正確ですか？",
+        "acceptedAnswer": { "@type": "Answer", "text": "公的ガイドラインに基づいた目安です。実際の備蓄品選定にあたっては、専門スタッフによる個別相談をお勧めします。" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="header" role="banner">
+  <div class="header__inner">
+    <a href="/" class="header__logo" aria-label="TriTail合同会社 トップページ">
+      <img src="/assets/images/logo.png" alt="TriTail合同会社" height="64" width="auto">
+    </a>
+    <nav class="nav" aria-label="グローバルナビゲーション">
+      <ul class="nav__list" role="list">
+        <li><a href="/disaster/" class="nav__link" aria-current="page">防災備蓄事業</a></li>
+        <li><a href="/ip/"       class="nav__link">IP事業</a></li>
+        <li><a href="/company/"  class="nav__link">会社概要</a></li>
+      </ul>
+      <a href="/contact/" class="nav__link nav__cta">お問い合わせ</a>
+    </nav>
+    <button class="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav">
+      <span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span>
+    </button>
+  </div>
+</header>
+
+<nav id="mobileNav" class="mobile-nav" aria-label="モバイルナビゲーション" hidden>
+  <ul class="mobile-nav__list" role="list">
+    <li><a href="/disaster/"      class="mobile-nav__link">防災備蓄事業</a></li>
+    <li><a href="/bcp-diagnosis/" class="mobile-nav__link">無料BCP診断</a></li>
+    <li><a href="/stockpile-plan/"class="mobile-nav__link">無料備蓄計画書</a></li>
+    <li><a href="/enterprise/"    class="mobile-nav__link">企業向け防災支援</a></li>
+    <li><a href="/ip/"            class="mobile-nav__link">IP事業</a></li>
+    <li><a href="/company/"       class="mobile-nav__link">会社概要</a></li>
+  </ul>
+  <a href="/contact/" class="mobile-nav__cta">無料相談はこちら</a>
+</nav>
+
+<nav class="disaster-subnav" aria-label="防災備蓄サブナビ">
+  <div class="disaster-subnav__inner">
+    <a href="/disaster/"      class="disaster-subnav__link">防災備蓄事業TOP</a>
+    <a href="/bcp-diagnosis/" class="disaster-subnav__link">🔍 無料BCP診断</a>
+    <a href="/stockpile-plan/"class="disaster-subnav__link" aria-current="page">📋 無料備蓄計画書</a>
+    <a href="/enterprise/"    class="disaster-subnav__link">🏢 企業向け支援</a>
+    <a href="/download/"      class="disaster-subnav__link">📥 資料ダウンロード</a>
+    <a href="/column/"        class="disaster-subnav__link">📖 防災コラム</a>
+    <a href="/contact/"       class="disaster-subnav__link">✉ 無料相談</a>
+  </div>
+</nav>
+
+<main id="main" tabindex="-1">
+
+  <section class="hero hero--sub hero--plan" aria-labelledby="hero-title">
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <ol class="breadcrumb__list" role="list">
+        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">トップ</a></li>
+        <li class="breadcrumb__item"><a href="/disaster/" class="breadcrumb__link">防災備蓄事業</a></li>
+        <li class="breadcrumb__item"><span class="breadcrumb__current" aria-current="page">無料防災備蓄計画書作成</span></li>
+      </ol>
+    </nav>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Free Stockpile Planner</span>
+        <h1 class="hero__title" id="hero-title">
+          無料<em>防災備蓄</em><br>
+          計画書を作成する
+        </h1>
+        <p class="hero__lead">
+          従業員数を入力するだけで<br>
+          必要な備蓄量を自動計算します。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section section--gray">
+    <div class="container">
+      <div style="max-width: 780px; margin-inline: auto; text-align: center;">
+        <span class="section__eyebrow anim">How it works</span>
+        <h2 class="section__title section__title--center anim anim-d1">4項目を入力するだけで完了</h2>
+        <p class="section__lead section__lead--center anim anim-d2">
+          内閣府・東京都防災指針に基づいた計算式で、保存水・保存食・簡易トイレなど8品目の必要数量をすぐに算出します。
+        </p>
+        <div class="cta-trio anim anim-d3" style="margin-top: 32px;">
+          <div class="cta-trio-item">
+            <span class="cta-trio-item__icon">📝</span>
+            <div class="cta-trio-item__title">4項目を入力</div>
+            <p class="cta-trio-item__text">業種・従業員数・拠点数・備蓄日数</p>
+          </div>
+          <div class="cta-trio-item">
+            <span class="cta-trio-item__icon">⚡</span>
+            <div class="cta-trio-item__title">即座に自動計算</div>
+            <p class="cta-trio-item__text">8品目の必要数量を一覧表示</p>
+          </div>
+          <div class="cta-trio-item">
+            <span class="cta-trio-item__icon">📞</span>
+            <div class="cta-trio-item__title">そのまま相談</div>
+            <p class="cta-trio-item__text">計算結果をもとに無料相談へ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="section" aria-labelledby="plan-title">
+    <div class="container">
+      <span class="section__eyebrow anim">Calculator</span>
+      <h2 class="section__title anim anim-d1" id="plan-title">備蓄量計算フォーム</h2>
+
+      <div class="plan-wrap anim anim-d2">
+        <form id="stockplanForm" novalidate>
+
+          <div class="form-group">
+            <label class="form-label" for="industry">
+              業種 <span class="badge-optional">任意</span>
+            </label>
+            <select class="form-select" id="industry" name="industry">
+              <option value="">選択してください（任意）</option>
+              <option value="製造業・物流業">製造業・物流業</option>
+              <option value="情報・通信・IT">情報・通信・IT</option>
+              <option value="小売・飲食・サービス">小売・飲食・サービス</option>
+              <option value="医療・福祉・教育">医療・福祉・教育</option>
+              <option value="建設・不動産">建設・不動産</option>
+              <option value="その他">その他</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="employees">
+              従業員数（拠点合計） <span class="badge-required">必須</span>
+            </label>
+            <input class="form-input" type="number" id="employees" name="employees" min="1" max="9999" placeholder="例: 50" required>
+            <span class="form-error" role="alert">従業員数を入力してください（1以上）</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="bases">
+              事業所・拠点数 <span class="badge-required">必須</span>
+            </label>
+            <input class="form-input" type="number" id="bases" name="bases" min="1" max="999" placeholder="例: 1" value="1" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">希望備蓄日数 <span class="badge-required">必須</span></label>
+            <div class="form-radio-group">
+              <label class="form-radio-item">
+                <input type="radio" name="days" value="1"> 1日分（最低限）
+              </label>
+              <label class="form-radio-item">
+                <input type="radio" name="days" value="3" checked> 3日分（推奨）
+              </label>
+              <label class="form-radio-item">
+                <input type="radio" name="days" value="7"> 7日分（推奨以上）
+              </label>
+            </div>
+          </div>
+
+          <div style="background: rgba(214,163,58,0.08); border: 1px solid rgba(214,163,58,0.3); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 28px; font-size: 0.875rem; color: var(--text-sub); line-height: 1.8;">
+            📌 <strong>計算の根拠：</strong>内閣府・東京都「帰宅困難者対策ガイドライン」に基づく基準（飲料水1人1日3L・食料1日3食）を使用しています。
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn--gold btn--lg btn-arrow">備蓄計画書を作成する</button>
+          </div>
+        </form>
+
+        <!-- RESULT -->
+        <div class="plan-result" id="stockplanResult">
+          <div class="plan-result-header" id="planHeader">
+            <div class="plan-result-header__title">
+              従業員 <span data-emp>—</span> ／ <span data-base>—</span> ／ <span data-days>—</span> の推奨備蓄量
+            </div>
+            <div class="plan-result-header__sub">内閣府・東京都防災指針に基づく計算結果（目安）</div>
+          </div>
+
+          <div class="plan-grid" id="planGrid"><!-- JS fill --></div>
+
+          <div class="result-cta-box">
+            <div class="result-cta-box__title">備蓄品の選定・調達はTriTailにお任せください</div>
+            <p class="result-cta-box__text">
+              計算結果をもとに、予算・スペース・業種に合わせた最適な備蓄品をご提案します。<br>
+              相談は完全無料。強引な勧誘は一切ありません。
+            </p>
+            <div class="result-cta-box__actions">
+              <a href="/contact/?from=stockplan" class="btn btn--gold btn--lg btn-arrow">無料相談を申し込む</a>
+              <a href="/download/" class="btn btn--outline-gold btn--lg">詳細ガイドをダウンロード</a>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 24px;">
+            <button class="btn btn--outline-gold" id="stockplanRestart">条件を変更して再計算</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT CALCULATION -->
+  <section class="section section--gray" aria-labelledby="calc-title">
+    <div class="container">
+      <span class="section__eyebrow anim">Standard</span>
+      <h2 class="section__title anim anim-d1" id="calc-title">備蓄量の計算基準</h2>
+      <p class="section__lead anim anim-d2">当ツールは以下の公的基準に基づいて計算しています。</p>
+      <div class="anim anim-d3" style="margin-top: 40px; max-width: 780px;">
+        <div style="border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow);">
+          <table style="width:100%; border-collapse: collapse; font-size: 0.9375rem;">
+            <thead>
+              <tr style="background: var(--gray);">
+                <th style="padding: 16px 20px; font-weight:700; color:var(--brown); border-bottom: 1px solid var(--border); text-align:left;">品目</th>
+                <th style="padding: 16px 20px; font-weight:700; color:var(--brown); border-bottom: 1px solid var(--border); text-align:left;">計算基準</th>
+                <th style="padding: 16px 20px; font-weight:700; color:var(--brown); border-bottom: 1px solid var(--border); text-align:left;">出典</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:14px 20px; border-bottom:1px solid var(--border);">💧 保存水</td><td style="padding:14px 20px; border-bottom:1px solid var(--border);">1人1日3L × 日数</td><td style="padding:14px 20px; border-bottom:1px solid var(--border); color:var(--text-muted);">内閣府防災担当</td></tr>
+              <tr style="background:rgba(248,249,250,0.7)"><td style="padding:14px 20px; border-bottom:1px solid var(--border);">🍱 保存食</td><td style="padding:14px 20px; border-bottom:1px solid var(--border);">1人1日3食 × 日数</td><td style="padding:14px 20px; border-bottom:1px solid var(--border); color:var(--text-muted);">内閣府防災担当</td></tr>
+              <tr><td style="padding:14px 20px; border-bottom:1px solid var(--border);">🚽 簡易トイレ</td><td style="padding:14px 20px; border-bottom:1px solid var(--border);">1人1日5回 × 日数</td><td style="padding:14px 20px; border-bottom:1px solid var(--border); color:var(--text-muted);">東京都帰宅困難者ガイドライン</td></tr>
+              <tr style="background:rgba(248,249,250,0.7)"><td style="padding:14px 20px; border-bottom:1px solid var(--border);">🛏️ 毛布</td><td style="padding:14px 20px; border-bottom:1px solid var(--border);">1人1枚 × 拠点数</td><td style="padding:14px 20px; border-bottom:1px solid var(--border); color:var(--text-muted);">内閣府防災担当</td></tr>
+              <tr><td style="padding:14px 20px; border-bottom:1px solid var(--border);">🧴 衛生用品</td><td style="padding:14px 20px; border-bottom:1px solid var(--border);">10名に1セット</td><td style="padding:14px 20px; border-bottom:1px solid var(--border); color:var(--text-muted);">TriTail推奨基準</td></tr>
+              <tr style="background:rgba(248,249,250,0.7)"><td style="padding:14px 20px; border-bottom:1px solid var(--border);">🔦 ライト</td><td style="padding:14px 20px; border-bottom:1px solid var(--border);">5名に1個 × 拠点数</td><td style="padding:14px 20px; border-bottom:1px solid var(--border); color:var(--text-muted);">TriTail推奨基準</td></tr>
+              <tr><td style="padding:14px 20px; border-bottom:1px solid var(--border);">🔋 モバイル電源</td><td style="padding:14px 20px; border-bottom:1px solid var(--border);">20名に1台 × 拠点数</td><td style="padding:14px 20px; border-bottom:1px solid var(--border); color:var(--text-muted);">TriTail推奨基準</td></tr>
+              <tr style="background:rgba(248,249,250,0.7)"><td style="padding:14px 20px;">⛑️ 防災ヘルメット</td><td style="padding:14px 20px;">1人1個</td><td style="padding:14px 20px; color:var(--text-muted);">消防庁推奨</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner" aria-labelledby="cta-title">
+    <div class="cta-banner__inner">
+      <h2 class="cta-banner__title anim" id="cta-title">備蓄品の選定・調達もお任せください</h2>
+      <p class="cta-banner__text anim anim-d1">計算結果を持ってご相談いただければ、より具体的なご提案が可能です。</p>
+      <div class="cta-banner__actions anim anim-d2">
+        <a href="/contact/" class="btn btn--gold btn--lg btn-arrow">無料相談はこちら</a>
+        <a href="/bcp-diagnosis/" class="btn btn--outline btn--lg">BCP診断を受ける</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="sticky-cta-bar" role="complementary" aria-label="クイックアクセス">
+  <span class="sticky-cta-bar__text">BCP対策のご相談は</span>
+  <a href="/bcp-diagnosis/" class="btn btn--outline-gold">🔍 BCP診断</a>
+  <a href="/contact/"       class="btn btn--gold">無料相談</a>
+  <button class="sticky-cta-bar__dismiss" aria-label="閉じる">✕</button>
+</div>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <span class="footer__logo-text">TriTail合同会社</span>
+        <p class="footer__tagline">従業員を守る備えが、会社を守る。<br>企業防災・BCP対策をトータルサポート。</p>
+      </div>
+      <div>
+        <p class="footer__col-title">防災備蓄</p>
+        <ul class="footer__links" role="list">
+          <li><a href="/disaster/"       class="footer__link">防災備蓄事業</a></li>
+          <li><a href="/bcp-diagnosis/"  class="footer__link">無料BCP診断</a></li>
+          <li><a href="/stockpile-plan/" class="footer__link">無料備蓄計画書</a></li>
+          <li><a href="/enterprise/"     class="footer__link">企業向け防災支援</a></li>
+          <li><a href="/column/"         class="footer__link">防災コラム</a></li>
+          <li><a href="/download/"       class="footer__link">資料ダウンロード</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">会社情報</p>
+        <ul class="footer__links" role="list">
+          <li><a href="/company/"  class="footer__link">会社概要</a></li>
+          <li><a href="/contact/"  class="footer__link">お問い合わせ</a></li>
+          <li><a href="/ip/"       class="footer__link">IP事業</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">連絡先</p>
+        <ul class="footer__contact-list" role="list">
+          <li class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">📍</span>
+            <span>〒144-0056<br>東京都大田区西六郷3-17-4</span>
+          </li>
+          <li class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">📞</span>
+            <a href="tel:0364245957" class="footer__contact-link">03-6424-5957</a>
+          </li>
+          <li class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">✉</span>
+            <a href="mailto:info@tritail.co.jp" class="footer__contact-link">info@tritail.co.jp</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">&copy; 2026 TriTail合同会社. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/disaster.js"></script>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>無料BCP診断 | 企業の防災対策レベルを10問で診断 | TriTail合同会社</title>
+  <meta name="description" content="10問の診断であなたの会社のBCP（事業継続計画）対策レベルをS〜D評価で診断。現在のリスクと具体的な改善提案を無料でご提供します。東京・全国対応。">
+  <link rel="canonical" href="https://tritail.co.jp/bcp-diagnosis/">
+
+  <!-- OGP -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://tritail.co.jp/bcp-diagnosis/">
+  <meta property="og:title"       content="無料BCP診断 | 企業の防災対策レベルを10問で診断 | TriTail">
+  <meta property="og:description" content="10問の診断で会社のBCP対策レベルをS〜D評価で診断。現在のリスクと具体的な改善提案を無料でご提供。">
+  <meta property="og:image"       content="https://tritail.co.jp/assets/images/ogp.jpg">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/disaster.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "トップ",    "item": "https://tritail.co.jp/" },
+      { "@type": "ListItem", "position": 2, "name": "防災備蓄事業", "item": "https://tritail.co.jp/disaster/" },
+      { "@type": "ListItem", "position": 3, "name": "無料BCP診断", "item": "https://tritail.co.jp/bcp-diagnosis/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "BCP診断は無料ですか？",
+        "acceptedAnswer": { "@type": "Answer", "text": "はい、完全無料でご利用いただけます。診断結果の確認後、ご希望の方は無料相談へお進みいただけます。" }
+      },
+      {
+        "@type": "Question",
+        "name": "診断結果はどのくらい正確ですか？",
+        "acceptedAnswer": { "@type": "Answer", "text": "10問の設問に基づいたスクリーニング診断です。詳細な診断は専門家による訪問ヒアリングをお勧めします。" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" role="banner">
+  <div class="header__inner">
+    <a href="/" class="header__logo" aria-label="TriTail合同会社 トップページ">
+      <img src="/assets/images/logo.png" alt="TriTail合同会社" height="64" width="auto">
+    </a>
+    <nav class="nav" aria-label="グローバルナビゲーション">
+      <ul class="nav__list" role="list">
+        <li><a href="/disaster/" class="nav__link" aria-current="page">防災備蓄事業</a></li>
+        <li><a href="/ip/"       class="nav__link">IP事業</a></li>
+        <li><a href="/company/"  class="nav__link">会社概要</a></li>
+      </ul>
+      <a href="/contact/" class="nav__link nav__cta">お問い合わせ</a>
+    </nav>
+    <button class="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </div>
+</header>
+
+<nav id="mobileNav" class="mobile-nav" aria-label="モバイルナビゲーション" hidden>
+  <ul class="mobile-nav__list" role="list">
+    <li><a href="/disaster/"      class="mobile-nav__link">防災備蓄事業</a></li>
+    <li><a href="/bcp-diagnosis/" class="mobile-nav__link">無料BCP診断</a></li>
+    <li><a href="/stockpile-plan/"class="mobile-nav__link">無料備蓄計画書</a></li>
+    <li><a href="/enterprise/"    class="mobile-nav__link">企業向け防災支援</a></li>
+    <li><a href="/ip/"            class="mobile-nav__link">IP事業</a></li>
+    <li><a href="/company/"       class="mobile-nav__link">会社概要</a></li>
+  </ul>
+  <a href="/contact/" class="mobile-nav__cta">無料相談はこちら</a>
+</nav>
+
+<!-- ===== DISASTER SUBNAV ===== -->
+<nav class="disaster-subnav" aria-label="防災備蓄サブナビ">
+  <div class="disaster-subnav__inner">
+    <a href="/disaster/"      class="disaster-subnav__link">防災備蓄事業TOP</a>
+    <a href="/bcp-diagnosis/" class="disaster-subnav__link" aria-current="page">🔍 無料BCP診断</a>
+    <a href="/stockpile-plan/"class="disaster-subnav__link">📋 無料備蓄計画書</a>
+    <a href="/enterprise/"    class="disaster-subnav__link">🏢 企業向け支援</a>
+    <a href="/download/"      class="disaster-subnav__link">📥 資料ダウンロード</a>
+    <a href="/column/"        class="disaster-subnav__link">📖 防災コラム</a>
+    <a href="/contact/"       class="disaster-subnav__link">✉ 無料相談</a>
+  </div>
+</nav>
+
+<main id="main" tabindex="-1">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero hero--sub hero--diagnosis" aria-labelledby="hero-title">
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <ol class="breadcrumb__list" role="list">
+        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">トップ</a></li>
+        <li class="breadcrumb__item"><a href="/disaster/" class="breadcrumb__link">防災備蓄事業</a></li>
+        <li class="breadcrumb__item"><span class="breadcrumb__current" aria-current="page">無料BCP診断</span></li>
+      </ol>
+    </nav>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Free BCP Assessment</span>
+        <h1 class="hero__title" id="hero-title">
+          無料<em>BCP診断</em><br>
+          10問で防災レベルを<br>チェック
+        </h1>
+        <p class="hero__lead">
+          S〜D評価で現状リスクと改善提案を<br>
+          即座にフィードバック。完全無料。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTRO ===== -->
+  <section class="section section--gray" aria-label="診断の概要">
+    <div class="container">
+      <div style="max-width: 780px; margin-inline: auto; text-align: center;">
+        <span class="section__eyebrow anim">Why BCP?</span>
+        <h2 class="section__title section__title--center anim anim-d1">あなたの会社の防災対策は大丈夫ですか？</h2>
+        <p class="section__lead section__lead--center anim anim-d2" style="margin-bottom: 36px;">
+          南海トラフ地震・首都直下地震の発生確率は今後30年以内で70〜80%。<br>
+          BCP（事業継続計画）未策定の中小企業の約60%が大規模災害後に廃業するという調査結果も。<br>
+          今すぐ10問で貴社の防災レベルを確認してください。
+        </p>
+        <div class="cta-trio anim anim-d3">
+          <div class="cta-trio-item">
+            <span class="cta-trio-item__icon">⏱️</span>
+            <div class="cta-trio-item__title">所要時間<br>約3分</div>
+            <p class="cta-trio-item__text">10問の選択式質問に答えるだけ</p>
+          </div>
+          <div class="cta-trio-item">
+            <span class="cta-trio-item__icon">📊</span>
+            <div class="cta-trio-item__title">S〜D評価で<br>即座に判定</div>
+            <p class="cta-trio-item__text">スコアに基づいた具体的な改善提案を表示</p>
+          </div>
+          <div class="cta-trio-item">
+            <span class="cta-trio-item__icon">💰</span>
+            <div class="cta-trio-item__title">完全<br>無料</div>
+            <p class="cta-trio-item__text">登録不要・今すぐ診断開始できます</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIAGNOSIS FORM ===== -->
+  <section class="section" aria-labelledby="diagnosis-title">
+    <div class="container">
+      <span class="section__eyebrow anim">Diagnosis</span>
+      <h2 class="section__title anim anim-d1" id="diagnosis-title">BCP診断スタート</h2>
+      <p class="section__lead anim anim-d2" style="margin-bottom: 48px;">各質問でもっとも当てはまる選択肢を選んでください。</p>
+
+      <!-- FORM WRAP -->
+      <div class="diagnosis-wrap anim anim-d3" id="bcpDiagnosis">
+
+        <!-- Progress bar -->
+        <div class="diagnosis-progress" aria-label="診断進捗">
+          <div class="diagnosis-progress__step"></div>
+          <div class="diagnosis-progress__step"></div>
+          <div class="diagnosis-progress__step"></div>
+          <div class="diagnosis-progress__step"></div>
+          <div class="diagnosis-progress__step"></div>
+          <div class="diagnosis-progress__step"></div>
+          <div class="diagnosis-progress__step"></div>
+          <div class="diagnosis-progress__step"></div>
+          <div class="diagnosis-progress__step"></div>
+          <div class="diagnosis-progress__step"></div>
+          <span class="diagnosis-progress__label">1 / 10</span>
+        </div>
+
+        <!-- Q1 -->
+        <div class="diagnosis-step" data-q="q1">
+          <span class="diagnosis-question__num">Question 01 / 10</span>
+          <p class="diagnosis-question__text">貴社の業種を教えてください。</p>
+          <div class="diagnosis-options">
+            <button class="diagnosis-option" data-q="q1" data-val="a"><span class="diagnosis-option__radio"></span>製造業・物流業</button>
+            <button class="diagnosis-option" data-q="q1" data-val="b"><span class="diagnosis-option__radio"></span>情報・通信・IT</button>
+            <button class="diagnosis-option" data-q="q1" data-val="c"><span class="diagnosis-option__radio"></span>小売・飲食・サービス</button>
+            <button class="diagnosis-option" data-q="q1" data-val="d"><span class="diagnosis-option__radio"></span>医療・福祉・教育</button>
+            <button class="diagnosis-option" data-q="q1" data-val="e"><span class="diagnosis-option__radio"></span>建設・不動産</button>
+            <button class="diagnosis-option" data-q="q1" data-val="f"><span class="diagnosis-option__radio"></span>その他</button>
+          </div>
+          <div class="diagnosis-nav">
+            <span></span>
+            <button class="btn btn--gold" data-next>次へ →</button>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="diagnosis-step" data-q="q2">
+          <span class="diagnosis-question__num">Question 02 / 10</span>
+          <p class="diagnosis-question__text">従業員数を教えてください。</p>
+          <div class="diagnosis-options">
+            <button class="diagnosis-option" data-q="q2" data-val="a"><span class="diagnosis-option__radio"></span>10名以下</button>
+            <button class="diagnosis-option" data-q="q2" data-val="b"><span class="diagnosis-option__radio"></span>11〜50名</button>
+            <button class="diagnosis-option" data-q="q2" data-val="c"><span class="diagnosis-option__radio"></span>51〜100名</button>
+            <button class="diagnosis-option" data-q="q2" data-val="d"><span class="diagnosis-option__radio"></span>101〜300名</button>
+            <button class="diagnosis-option" data-q="q2" data-val="e"><span class="diagnosis-option__radio"></span>301名以上</button>
+          </div>
+          <div class="diagnosis-nav">
+            <button class="btn btn--outline-gold" data-prev>← 戻る</button>
+            <button class="btn btn--gold" data-next>次へ →</button>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="diagnosis-step" data-q="q3">
+          <span class="diagnosis-question__num">Question 03 / 10</span>
+          <p class="diagnosis-question__text">BCP（事業継続計画）の策定状況は？</p>
+          <div class="diagnosis-options">
+            <button class="diagnosis-option" data-q="q3" data-val="a"><span class="diagnosis-option__radio"></span>策定済み・定期的に見直している</button>
+            <button class="diagnosis-option" data-q="q3" data-val="b"><span class="diagnosis-option__radio"></span>策定中・一部の対策のみ実施</button>
+            <button class="diagnosis-option" data-q="q3" data-val="c"><span class="diagnosis-option__radio"></span>未策定・何もしていない</button>
+          </div>
+          <div class="diagnosis-nav">
+            <button class="btn btn--outline-gold" data-prev>← 戻る</button>
+            <button class="btn btn--gold" data-next>次へ →</button>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="diagnosis-step" data-q="q4">
+          <span class="diagnosis-question__num">Question 04 / 10</span>
+          <p class="diagnosis-question__text">現在の備蓄日数はどのくらいですか？</p>
+          <div class="diagnosis-options">
+            <button class="diagnosis-option" data-q="q4" data-val="a"><span class="diagnosis-option__radio"></span>3日分（72時間）以上</button>
+            <button class="diagnosis-option" data-q="q4" data-val="b"><span class="diagnosis-option__radio"></span>1〜2日分</button>
+            <button class="diagnosis-option" data-q="q4" data-val="c"><span class="diagnosis-option__radio"></span>備蓄していない</button>
+          </div>
+          <div class="diagnosis-nav">
+            <button class="btn btn--outline-gold" data-prev>← 戻る</button>
+            <button class="btn btn--gold" data-next>次へ →</button>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="diagnosis-step" data-q="q5">
+          <span class="diagnosis-question__num">Question 05 / 10</span>
+          <p class="diagnosis-question__text">保存水（飲料水）の備蓄状況は？</p>
+          <div class="diagnosis-options">
+            <button class="diagnosis-option" data-q="q5" data-val="a"><span class="diagnosis-option__radio"></span>十分に備蓄している（1人1日3L基準）</button>
+            <button class="diagnosis-option" data-q="q5" data-val="b"><span class="diagnosis-option__radio"></span>一部備蓄しているが不足している</button>
+            <button class="diagnosis-option" data-q="q5" data-val="c"><span class="diagnosis-option__radio"></span>備蓄していない</button>
+          </div>
+          <div class="diagnosis-nav">
+            <button class="btn btn--outline-gold" data-prev>← 戻る</button>
+            <button class="btn btn--gold" data-next>次へ →</button>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="diagnosis-step" data-q="q6">
+          <span class="diagnosis-question__num">Question 06 / 10</span>
+          <p class="diagnosis-question__text">保存食（非常食）の備蓄状況は？</p>
+          <div class="diagnosis-options">
+            <button class="diagnosis-option" data-q="q6" data-val="a"><span class="diagnosis-option__radio"></span>十分に備蓄している（3日分以上）</button>
+            <button class="diagnosis-option" data-q="q6" data-val="b"><span class="diagnosis-option__radio"></span>一部備蓄しているが不足している</button>
+            <button class="diagnosis-option" data-q="q6" data-val="c"><span class="diagnosis-option__radio"></span>備蓄していない</button>
+          </div>
+          <div class="diagnosis-nav">
+            <button class="btn btn--outline-gold" data-prev>← 戻る</button>
+            <button class="btn btn--gold" data-next>次へ →</button>
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="diagnosis-step" data-q="q7">
+          <span class="diagnosis-question__num">Question 07 / 10</span>
+          <p class="diagnosis-question__text">簡易トイレの備蓄はありますか？</p>
+          <div class="diagnosis-options">
+            <button class="diagnosis-option" data-q="q7" data-val="a"><span class="diagnosis-option__radio"></span>あり（必要数量を備蓄している）</button>
+            <button class="diagnosis-option" data-q="q7" data-val="b"><span class="diagnosis-option__radio"></span>なし・不足している</button>
+          </div>
+          <div class="diagnosis-nav">
+            <button class="btn btn--outline-gold" data-prev>← 戻る</button>
+            <button class="btn btn--gold" data-next>次へ →</button>
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="diagnosis-step" data-q="q8">
+          <span class="diagnosis-question__num">Question 08 / 10</span>
+          <p class="diagnosis-question__text">防災マニュアル（行動指針・連絡体制）はありますか？</p>
+          <div class="diagnosis-options">
+            <button class="diagnosis-option" data-q="q8" data-val="a"><span class="diagnosis-option__radio"></span>あり（整備・周知済み）</button>
+            <button class="diagnosis-option" data-q="q8" data-val="b"><span class="diagnosis-option__radio"></span>なし・未整備</button>
+          </div>
+          <div class="diagnosis-nav">
+            <button class="btn btn--outline-gold" data-prev>← 戻る</button>
+            <button class="btn btn--gold" data-next>次へ →</button>
+          </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="diagnosis-step" data-q="q9">
+          <span class="diagnosis-question__num">Question 09 / 10</span>
+          <p class="diagnosis-question__text">防災訓練の実施状況は？</p>
+          <div class="diagnosis-options">
+            <button class="diagnosis-option" data-q="q9" data-val="a"><span class="diagnosis-option__radio"></span>年1回以上定期的に実施</button>
+            <button class="diagnosis-option" data-q="q9" data-val="b"><span class="diagnosis-option__radio"></span>数年に1回程度実施</button>
+            <button class="diagnosis-option" data-q="q9" data-val="c"><span class="diagnosis-option__radio"></span>ほとんど実施していない</button>
+          </div>
+          <div class="diagnosis-nav">
+            <button class="btn btn--outline-gold" data-prev>← 戻る</button>
+            <button class="btn btn--gold" data-next>次へ →</button>
+          </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="diagnosis-step" data-q="q10">
+          <span class="diagnosis-question__num">Question 10 / 10</span>
+          <p class="diagnosis-question__text">帰宅困難者対策（従業員の社内待機・宿泊対策）は？</p>
+          <div class="diagnosis-options">
+            <button class="diagnosis-option" data-q="q10" data-val="a"><span class="diagnosis-option__radio"></span>対策済み（食料・宿泊場所確保済み）</button>
+            <button class="diagnosis-option" data-q="q10" data-val="b"><span class="diagnosis-option__radio"></span>検討中・一部対応</button>
+            <button class="diagnosis-option" data-q="q10" data-val="c"><span class="diagnosis-option__radio"></span>未対策</button>
+          </div>
+          <div class="diagnosis-nav">
+            <button class="btn btn--outline-gold" data-prev>← 戻る</button>
+            <button class="btn btn--gold" data-next>診断結果を見る 🔍</button>
+          </div>
+        </div>
+
+      </div><!-- /#bcpDiagnosis -->
+
+      <!-- ===== RESULT ===== -->
+      <div class="diagnosis-result" id="diagnosisResult">
+
+        <div class="score-display">
+          <span class="score-display__label">あなたの会社のBCP評価</span>
+          <div class="score-display__grade" id="scoreGrade">B</div>
+          <div class="score-display__title" id="scoreTitle">改善が必要です</div>
+        </div>
+
+        <div class="result-risk-grid">
+          <div class="result-risk-item result-risk-item--red">
+            <div class="result-risk-item__label">現在のリスク</div>
+            <div class="result-risk-item__text" id="resultRisk">—</div>
+          </div>
+          <div class="result-risk-item result-risk-item--orange">
+            <div class="result-risk-item__label">改善提案</div>
+            <div class="result-risk-item__text" id="resultImprove">—</div>
+          </div>
+          <div class="result-risk-item result-risk-item--gold">
+            <div class="result-risk-item__label">優先対応事項</div>
+            <div class="result-risk-item__text" id="resultPriority">—</div>
+          </div>
+          <div class="result-risk-item result-risk-item--green">
+            <div class="result-risk-item__label">TriTailが提供できること</div>
+            <div class="result-risk-item__text">備蓄品選定・BCP策定・調達・運用管理まで、企業防災を一貫してサポートします。</div>
+          </div>
+        </div>
+
+        <div class="result-recommendations">
+          <div class="result-recommendations__title">📋 具体的な推奨アクション</div>
+          <div class="result-rec-list" id="recList"></div>
+        </div>
+
+        <div class="result-cta-box">
+          <div class="result-cta-box__title">「従業員を守る備えが、会社を守る。」</div>
+          <p class="result-cta-box__text">
+            診断結果をもとに、TriTailの専門スタッフが具体的な改善プランをご提案します。<br>
+            相談は完全無料・営業電話なし・強引な勧誘なし。お気軽にどうぞ。
+          </p>
+          <div class="result-cta-box__actions">
+            <a href="/contact/" class="btn btn--gold btn--lg btn-arrow">無料相談を申し込む</a>
+            <a href="/stockpile-plan/" class="btn btn--outline-gold btn--lg">無料備蓄計画書を作成する</a>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 24px;">
+          <button class="btn btn--outline-gold" id="diagnosisRestart">診断をやり直す</button>
+        </div>
+
+      </div><!-- /#diagnosisResult -->
+
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-banner" aria-labelledby="cta-title">
+    <div class="cta-banner__inner">
+      <h2 class="cta-banner__title anim" id="cta-title">防災備蓄の専門家に相談する</h2>
+      <p class="cta-banner__text anim anim-d1">
+        診断結果をお持ちの上でご相談いただくと、より具体的なご提案が可能です。
+      </p>
+      <div class="cta-banner__actions anim anim-d2">
+        <a href="/contact/"       class="btn btn--gold btn--lg btn-arrow">無料相談はこちら</a>
+        <a href="/stockpile-plan/"class="btn btn--outline btn--lg">備蓄計画書を作成する</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== STICKY CTA ===== -->
+<div class="sticky-cta-bar" role="complementary" aria-label="クイックアクセス">
+  <span class="sticky-cta-bar__text">防災対策でお困りですか？</span>
+  <a href="/stockpile-plan/" class="btn btn--outline-gold">📋 備蓄計画書</a>
+  <a href="/contact/"        class="btn btn--gold">無料相談</a>
+  <button class="sticky-cta-bar__dismiss" aria-label="閉じる">✕</button>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <span class="footer__logo-text">TriTail合同会社</span>
+        <p class="footer__tagline">従業員を守る備えが、会社を守る。<br>企業防災・BCP対策をトータルサポート。</p>
+      </div>
+      <div>
+        <p class="footer__col-title">防災備蓄</p>
+        <ul class="footer__links" role="list">
+          <li><a href="/disaster/"       class="footer__link">防災備蓄事業</a></li>
+          <li><a href="/bcp-diagnosis/"  class="footer__link">無料BCP診断</a></li>
+          <li><a href="/stockpile-plan/" class="footer__link">無料備蓄計画書</a></li>
+          <li><a href="/enterprise/"     class="footer__link">企業向け防災支援</a></li>
+          <li><a href="/column/"         class="footer__link">防災コラム</a></li>
+          <li><a href="/download/"       class="footer__link">資料ダウンロード</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">会社情報</p>
+        <ul class="footer__links" role="list">
+          <li><a href="/company/"  class="footer__link">会社概要</a></li>
+          <li><a href="/contact/"  class="footer__link">お問い合わせ</a></li>
+          <li><a href="/ip/"       class="footer__link">IP事業</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">連絡先</p>
+        <ul class="footer__contact-list" role="list">
+          <li class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">📍</span>
+            <span>〒144-0056<br>東京都大田区西六郷3-17-4</span>
+          </li>
+          <li class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">📞</span>
+            <a href="tel:0364245957" class="footer__contact-link">03-6424-5957</a>
+          </li>
+          <li class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">✉</span>
+            <a href="mailto:info@tritail.co.jp" class="footer__contact-link">info@tritail.co.jp</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">&copy; 2026 TriTail合同会社. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/disaster.js"></script>
+</body>
+</html>

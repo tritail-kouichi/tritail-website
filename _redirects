@@ -1,0 +1,9 @@
+# Cloudflare Pages リダイレクト設定
+
+# wwwなし → あり（必要に応じてコメント解除）
+# https://tritail.co.jp/* https://www.tritail.co.jp/:splat 301
+
+# www → なし（推奨）
+# https://www.tritail.co.jp/* https://tritail.co.jp/:splat 301
+
+# 末尾スラッシュ統一（Cloudflare Pages はデフォルトで処理するため通常不要）

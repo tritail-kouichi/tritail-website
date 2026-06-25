@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>制作相談フォーム | IP事業 | TriTail合同会社</title>
+  <meta name="description" content="TriTail合同会社へのグッズ制作相談はこちら。同人作家・VTuber・配信者向けのグッズ制作について、まずはお気軽にご相談ください。">
+  <link rel="canonical" href="https://tritail.co.jp/ip/contact/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tritail.co.jp/ip/contact/">
+  <meta property="og:title" content="制作相談フォーム | IP事業 | TriTail合同会社">
+  <meta property="og:description" content="グッズ制作についてのご相談はこちら。初めての方も歓迎です。">
+  <meta property="og:image" content="https://tritail.co.jp/assets/images/ogp.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "トップ",    "item": "https://tritail.co.jp/" },
+      { "@type": "ListItem", "position": 2, "name": "IP事業",    "item": "https://tritail.co.jp/ip/" },
+      { "@type": "ListItem", "position": 3, "name": "制作相談フォーム", "item": "https://tritail.co.jp/ip/contact/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="header" role="banner">
+  <div class="header__inner">
+    <a href="/" class="header__logo" aria-label="TriTail合同会社 トップページ">
+      <img src="/assets/images/logo.png" alt="TriTail合同会社" height="64" width="auto">
+    </a>
+    <nav class="nav" aria-label="グローバルナビゲーション">
+      <ul class="nav__list" role="list">
+        <li><a href="/disaster/" class="nav__link">防災備蓄事業</a></li>
+        <li><a href="/ip/"       class="nav__link" aria-current="page">IP事業</a></li>
+        <li><a href="/company/"  class="nav__link">会社概要</a></li>
+      </ul>
+      <a href="/contact/" class="nav__link nav__cta">お問い合わせ</a>
+    </nav>
+    <button class="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </div>
+</header>
+
+<nav id="mobileNav" class="mobile-nav" aria-label="モバイルナビゲーション" hidden>
+  <ul class="mobile-nav__list" role="list">
+    <li><a href="/disaster/" class="mobile-nav__link">防災備蓄事業</a></li>
+    <li><a href="/ip/"       class="mobile-nav__link">IP事業</a></li>
+    <li><a href="/company/"  class="mobile-nav__link">会社概要</a></li>
+  </ul>
+  <a href="/contact/" class="mobile-nav__cta">お問い合わせ</a>
+</nav>
+
+<nav class="ip-subnav" aria-label="IP事業サブナビゲーション">
+  <div class="ip-subnav__inner">
+    <a href="/ip/"                   class="ip-subnav__link">IP事業トップ</a>
+    <a href="/ip/creator-goods/"     class="ip-subnav__link">クリエイター向け</a>
+    <a href="/ip/streamer-goods/"    class="ip-subnav__link">VTuber・配信者向け</a>
+    <a href="/ip/production-flow/"   class="ip-subnav__link">制作の流れ</a>
+    <a href="/ip/faq/"               class="ip-subnav__link">よくある質問</a>
+    <a href="/ip/contact/"           class="ip-subnav__link" aria-current="page">制作相談</a>
+    <a href="/ip/estimate/"          class="ip-subnav__link">見積依頼</a>
+  </div>
+</nav>
+
+<main id="main" tabindex="-1">
+
+  <section class="hero hero--sub hero--ip-contact" aria-labelledby="hero-title">
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <ol class="breadcrumb__list" role="list">
+        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">トップ</a></li>
+        <li class="breadcrumb__item"><a href="/ip/" class="breadcrumb__link">IP事業</a></li>
+        <li class="breadcrumb__item"><span class="breadcrumb__current" aria-current="page">制作相談フォーム</span></li>
+      </ol>
+    </nav>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Production Consultation</span>
+        <h1 class="hero__title" id="hero-title">制作相談フォーム</h1>
+        <p class="hero__lead">
+          アイデアだけでも大丈夫です。<br>
+          担当者が丁寧にヒアリングし、最適なご提案をします。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="form-title">
+    <div class="container">
+      <div style="max-width: 760px; margin-inline: auto;">
+        <h2 class="section__title anim" id="form-title" style="text-align: center;">ご相談内容をお聞かせください</h2>
+        <p class="section__lead anim anim-d1" style="text-align: center; margin-bottom: 48px;">
+          必須項目をご入力のうえ送信してください。見積もりは無料です。
+        </p>
+
+        <form id="ipContactForm" class="anim anim-d2" novalidate>
+
+          <div class="form-group">
+            <label class="form-label" for="name">
+              お名前 <span class="form-required">必須</span>
+            </label>
+            <input class="form-input" type="text" id="name" name="name"
+              autocomplete="name" placeholder="山田 太郎" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="activity_name">
+              活動名 <span class="form-optional">任意</span>
+            </label>
+            <input class="form-input" type="text" id="activity_name" name="activity_name"
+              placeholder="活動名・サークル名・チャンネル名など">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">
+              メールアドレス <span class="form-required">必須</span>
+            </label>
+            <input class="form-input" type="email" id="email" name="email"
+              autocomplete="email" placeholder="example@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sns">
+              SNSアカウント <span class="form-optional">任意</span>
+            </label>
+            <input class="form-input" type="text" id="sns" name="sns"
+              placeholder="X(Twitter)・Instagram・YouTube などのURLまたはID">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="quantity">
+              希望数量 <span class="form-optional">任意</span>
+            </label>
+            <input class="form-input" type="text" id="quantity" name="quantity"
+              placeholder="例：50個、100個、未定">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="deadline">
+              希望納期 <span class="form-optional">任意</span>
+            </label>
+            <input class="form-input" type="text" id="deadline" name="deadline"
+              placeholder="例：2026年8月末、イベント名（コミケ107）">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="budget">
+              希望予算 <span class="form-optional">任意</span>
+            </label>
+            <input class="form-input" type="text" id="budget" name="budget"
+              placeholder="例：3万円程度、未定">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">
+              ご相談内容 <span class="form-required">必須</span>
+            </label>
+            <textarea class="form-textarea" id="message" name="message" rows="6"
+              placeholder="作りたいグッズの種類・用途・その他ご要望などをご記入ください。デザインデータの有無も教えていただけると助かります。" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAADqPiPtD3XNJr5o-" data-theme="light"></div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn--gold btn--lg btn--full" id="submitBtn">
+              送信する
+            </button>
+          </div>
+        </form>
+
+        <div id="successMsg" hidden role="status" aria-live="polite"
+          style="text-align: center; padding: 64px 24px; background: var(--gray); border-radius: var(--radius-lg); margin-top: 24px;">
+          <p style="font-size: 2rem; margin-bottom: 16px;">&#x2705;</p>
+          <p style="font-size: 1.25rem; font-weight: 700; color: var(--brown); margin-bottom: 12px;">送信が完了しました</p>
+          <p style="font-size: 0.9375rem; color: var(--text-sub); line-height: 2; margin-bottom: 32px;">
+            ご相談ありがとうございます。<br>担当者より3営業日以内にご連絡いたします。
+          </p>
+          <a href="/ip/" class="btn btn--outline-gold">IP事業トップへ戻る</a>
+        </div>
+
+        <div id="errorMsg" hidden role="alert" aria-live="assertive"
+          style="margin-top: 20px; padding: 16px 20px; background: #fff5f5; border: 1px solid #feb2b2; border-radius: var(--radius); color: #c53030; font-size: 0.9375rem;">
+          送信に失敗しました。時間をおいて再度お試しいただくか、<a href="mailto:info@tritail.co.jp" style="color: var(--gold);">info@tritail.co.jp</a> まで直接ご連絡ください。
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <span class="footer__logo-text">TriTail合同会社</span>
+        <p class="footer__tagline">日常を守り、日々を鮮やかに彩る。<br>想いをつなぎ、共に豊かな未来へ。</p>
+      </div>
+      <div>
+        <p class="footer__col-title">事業</p>
+        <ul class="footer__links" role="list">
+          <li><a href="/disaster/" class="footer__link">防災備蓄事業</a></li>
+          <li><a href="/ip/"       class="footer__link">IP事業</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">会社情報</p>
+        <ul class="footer__links" role="list">
+          <li><a href="/company/"  class="footer__link">会社概要</a></li>
+          <li><a href="/contact/"  class="footer__link">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">連絡先</p>
+        <ul class="footer__contact-list" role="list">
+          <li class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">&#x1F4CD;</span>
+            <span>〒144-0056<br>東京都大田区西六郷3-17-4</span>
+          </li>
+          <li class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">&#x1F4DE;</span>
+            <a href="tel:0364245957" class="footer__contact-link">03-6424-5957</a>
+          </li>
+          <li class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">&#x2709;</span>
+            <a href="mailto:info@tritail.co.jp" class="footer__contact-link">info@tritail.co.jp</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">&copy; 2026 TriTail合同会社. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script>
+  const form = document.getElementById('ipContactForm');
+  const successMsg = document.getElementById('successMsg');
+  const errorMsg = document.getElementById('errorMsg');
+  const submitBtn = document.getElementById('submitBtn');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      submitBtn.textContent = '送信中...';
+      errorMsg.hidden = true;
+      const data = Object.fromEntries(new FormData(form).entries());
+      data.subject = '制作相談（IP事業）';
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        if (res.ok) { form.hidden = true; successMsg.hidden = false; }
+        else { throw new Error(); }
+      } catch {
+        errorMsg.hidden = false;
+        submitBtn.disabled = false;
+        submitBtn.textContent = '送信する';
+      }
+    });
+  }
+</script>
+</body>
+</html>

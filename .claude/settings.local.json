@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-PSDrive -PSProvider FileSystem | Select-Object Name, @{N='使用済み\\(GB\\)';E={[math]::Round\\($_.Used/1GB,2\\)}}, @{N='空き\\(GB\\)';E={[math]::Round\\($_.Free/1GB,2\\)}}, @{N='合計\\(GB\\)';E={[math]::Round\\(\\($_.Used+$_.Free\\)/1GB,2\\)}})",
+      "PowerShell(Start-Process -FilePath \"C:\\\\Users\\\\info\\\\AppData\\\\Local\\\\AmazonChime\\\\Update.exe\" -ArgumentList \"--uninstall\" -Wait -ErrorAction SilentlyContinue)",
+      "mcp__Claude_Preview__preview_start",
+      "PowerShell(\\(Get-Command python -ErrorAction SilentlyContinue\\).Source; \\(Get-Command python3 -ErrorAction SilentlyContinue\\).Source; \\(Get-Command node -ErrorAction SilentlyContinue\\).Source)",
+      "Bash(python3 -m http.server 3000)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Read(//usr/bin/**)",
+      "Read(//c/Program Files/**)",
+      "Bash(ls /c/Users/info/AppData/Local/Programs/ 2>/dev/null | head -20)",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__visualize__read_me",
+      "mcp__visualize__show_widget",
+      "WebFetch(domain:tritail.co.jp)"
+    ]
+  }
+}

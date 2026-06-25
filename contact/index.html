@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | TriTail合同会社</title>
+  <meta name="description" content="TriTail合同会社へのお問い合わせはこちら。防災備蓄事業・IP事業に関するご質問・ご相談をお気軽にどうぞ。">
+  <link rel="canonical" href="https://tritail.co.jp/contact/">
+
+  <!-- OGP -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://tritail.co.jp/contact/">
+  <meta property="og:title"       content="お問い合わせ | TriTail合同会社">
+  <meta property="og:description" content="防災備蓄事業・IP事業に関するご質問・ご相談をお気軽にどうぞ。">
+  <meta property="og:image"       content="https://tritail.co.jp/assets/images/ogp.jpg">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "トップ",      "item": "https://tritail.co.jp/" },
+      { "@type": "ListItem", "position": 2, "name": "お問い合わせ", "item": "https://tritail.co.jp/contact/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" role="banner">
+  <div class="header__inner">
+    <a href="/" class="header__logo" aria-label="TriTail合同会社 トップページ">
+      <img src="/assets/images/logo.png" alt="TriTail合同会社" height="64" width="auto">
+    </a>
+    <nav class="nav" aria-label="グローバルナビゲーション">
+      <ul class="nav__list" role="list">
+        <li><a href="/disaster/" class="nav__link">防災備蓄事業</a></li>
+        <li><a href="/ip/"       class="nav__link">IP事業</a></li>
+        <li><a href="/company/"  class="nav__link">会社概要</a></li>
+      </ul>
+      <a href="/contact/" class="nav__link nav__cta" aria-current="page">お問い合わせ</a>
+    </nav>
+    <button class="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </div>
+</header>
+
+<nav id="mobileNav" class="mobile-nav" aria-label="モバイルナビゲーション" hidden>
+  <ul class="mobile-nav__list" role="list">
+    <li><a href="/disaster/" class="mobile-nav__link">防災備蓄事業</a></li>
+    <li><a href="/ip/"       class="mobile-nav__link">IP事業</a></li>
+    <li><a href="/company/"  class="mobile-nav__link">会社概要</a></li>
+  </ul>
+  <a href="/contact/" class="mobile-nav__cta">お問い合わせ</a>
+</nav>
+
+<main id="main" tabindex="-1">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero hero--sub hero--contact" aria-labelledby="hero-title">
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <ol class="breadcrumb__list" role="list">
+        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">トップ</a></li>
+        <li class="breadcrumb__item"><span class="breadcrumb__current" aria-current="page">お問い合わせ</span></li>
+      </ol>
+    </nav>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Contact</span>
+        <h1 class="hero__title" id="hero-title">お問い合わせ</h1>
+        <p class="hero__lead">ご質問・ご相談はお気軽にどうぞ。<br>担当者より折り返しご連絡いたします。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORM ===== -->
+  <section class="section" aria-labelledby="form-title">
+    <div class="container">
+      <h2 class="section__title anim" id="form-title" style="text-align:center;">お問い合わせフォーム</h2>
+      <p class="section__lead anim anim-d1" style="text-align:center; margin-bottom: 48px;">
+        必須項目をご記入の上、送信ボタンを押してください。
+      </p>
+
+      <form id="contactForm" class="contact-form anim anim-d2" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="name">
+            お名前 <span class="form-required" aria-label="必須">必須</span>
+          </label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            placeholder="山田 太郎"
+            required
+            aria-describedby="name-error"
+          >
+          <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="company">
+            会社名・組織名 <span class="form-optional">任意</span>
+          </label>
+          <input
+            class="form-input"
+            type="text"
+            id="company"
+            name="company"
+            autocomplete="organization"
+            placeholder="〇〇株式会社"
+          >
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">
+            メールアドレス <span class="form-required" aria-label="必須">必須</span>
+          </label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="example@example.com"
+            required
+            aria-describedby="email-error"
+          >
+          <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="subject">
+            お問い合わせ種別 <span class="form-required" aria-label="必須">必須</span>
+          </label>
+          <select
+            class="form-select"
+            id="subject"
+            name="subject"
+            required
+            aria-describedby="subject-error"
+          >
+            <option value="" disabled selected>選択してください</option>
+            <option value="防災備蓄事業について">防災備蓄事業について</option>
+            <option value="IP事業について">IP事業について</option>
+            <option value="その他">その他</option>
+          </select>
+          <span class="form-error" id="subject-error" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">
+            お問い合わせ内容 <span class="form-required" aria-label="必須">必須</span>
+          </label>
+          <textarea
+            class="form-textarea"
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="お問い合わせ内容をご記入ください"
+            required
+            aria-describedby="message-error"
+          ></textarea>
+          <span class="form-error" id="message-error" role="alert" aria-live="polite"></span>
+        </div>
+
+        <!-- Cloudflare Turnstile -->
+        <div class="form-group">
+          <div
+            class="cf-turnstile"
+            data-sitekey="0x4AAAAAADqPiPtD3XNJr5o-"
+            data-theme="light"
+          ></div>
+          <span class="form-error" id="turnstile-error" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="btn btn--gold btn--lg" id="submitBtn">
+            送信する
+          </button>
+        </div>
+      </form>
+
+      <!-- 送信完了メッセージ -->
+      <div id="successMsg" class="contact-success" hidden role="status" aria-live="polite">
+        <p class="contact-success__title">送信が完了しました</p>
+        <p class="contact-success__text">お問い合わせありがとうございます。<br>担当者より3営業日以内にご連絡いたします。</p>
+        <a href="/" class="btn btn--outline" style="margin-top: 24px;">トップへ戻る</a>
+      </div>
+
+      <!-- エラーメッセージ -->
+      <div id="errorMsg" class="contact-error" hidden role="alert" aria-live="assertive">
+        <p>送信に失敗しました。時間をおいて再度お試しいただくか、<a href="mailto:info@tritail.co.jp">info@tritail.co.jp</a> まで直接ご連絡ください。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <span class="footer__logo-text">TriTail合同会社</span>
+        <p class="footer__tagline">日常を守り、日々を鮮やかに彩る。<br>想いをつなぎ、共に豊かな未来へ。</p>
+      </div>
+      <div>
+        <p class="footer__col-title">事業</p>
+        <ul class="footer__links" role="list">
+          <li><a href="/disaster/" class="footer__link">防災備蓄事業</a></li>
+          <li><a href="/ip/"       class="footer__link">IP事業</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">会社情報</p>
+        <ul class="footer__links" role="list">
+          <li><a href="/company/"  class="footer__link">会社概要</a></li>
+          <li><a href="/contact/"  class="footer__link">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">連絡先</p>
+        <ul class="footer__contact-list" role="list">
+          <li class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">&#x1F4CD;</span>
+            <span>〒144-0056<br>東京都大田区西六郷3-17-4</span>
+          </li>
+          <li class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">&#x1F4DE;</span>
+            <a href="tel:0364245957" class="footer__contact-link">03-6424-5957</a>
+          </li>
+          <li class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">&#x2709;</span>
+            <a href="mailto:info@tritail.co.jp" class="footer__contact-link">info@tritail.co.jp</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">&copy; 2026 TriTail合同会社. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script>
+  const form = document.getElementById('contactForm');
+  const successMsg = document.getElementById('successMsg');
+  const errorMsg = document.getElementById('errorMsg');
+  const submitBtn = document.getElementById('submitBtn');
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      submitBtn.textContent = '送信中...';
+      errorMsg.hidden = true;
+
+      const data = Object.fromEntries(new FormData(form).entries());
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        if (res.ok) {
+          form.hidden = true;
+          successMsg.hidden = false;
+        } else {
+          throw new Error('server error');
+        }
+      } catch {
+        errorMsg.hidden = false;
+        submitBtn.disabled = false;
+        submitBtn.textContent = '送信する';
+      }
+    });
+  }
+</script>
+</body>
+</html>

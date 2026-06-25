@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#2d1710"/>
+  <!-- T letterform -->
+  <path d="M3,4 L29,4 L29,9 L20,9 L20,28 L12,28 L12,9 L3,9 Z" fill="#D6A33A"/>
+  <!-- Wave 1: Gold -->
+  <path d="M20,11 C23,10 26,8 29,6 C30,5 30,7 29,8 C26,11 23,12 20,13 Z" fill="#D6A33A"/>
+  <!-- Wave 2: Orange -->
+  <path d="M20,15 C23,13 26,11 29,9 C30,8 31,10 30,12 C27,15 23,17 20,18 Z" fill="#D96E28"/>
+  <!-- Wave 3: Dark Brown -->
+  <path d="M20,20 C24,17 27,14 30,11 C31,10 32,13 31,15 C28,19 24,22 20,23 Z" fill="#4A2618"/>
+</svg>

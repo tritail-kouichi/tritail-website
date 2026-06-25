@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--
+  OGP画像ジェネレーター
+  使い方:
+  1. このファイルをブラウザで開く
+  2. ウィンドウサイズを正確に 1200×630px に設定（DevToolsで指定）
+  3. スクリーンショットを撮る → ogp.jpg として保存
+  4. assets/images/ogp.jpg に配置
+
+  Chromeの場合:
+  DevTools (F12) → Ctrl+Shift+P → "Capture screenshot" → 「Capture full size screenshot」
+  または DevTools の Device toolbar で 1200×630 を指定してスクリーンショット
+-->
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+      background: #1a0a04;
+    }
+
+    .wrap {
+      width: 1200px;
+      height: 630px;
+      position: relative;
+      background:
+        linear-gradient(140deg, rgba(26,10,4,0.92) 0%, rgba(45,23,16,0.85) 50%, rgba(26,10,4,0.92) 100%),
+        url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80&auto=format&fit=crop') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 64px 80px;
+    }
+
+    /* Golden radial glow */
+    .wrap::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 70% at 80% 50%, rgba(214,163,58,0.18) 0%, transparent 65%);
+    }
+
+    /* Left accent bar */
+    .wrap::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 6px;
+      background: linear-gradient(180deg, #D6A33A 0%, #D96E28 50%, #4A2618 100%);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .logo-mark {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: #D6A33A;
+      letter-spacing: 0.08em;
+    }
+
+    .logo-sub {
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.2em;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #D6A33A;
+      border: 1px solid rgba(214,163,58,0.4);
+      border-radius: 100px;
+      padding: 6px 16px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 52px;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+    }
+
+    .title em {
+      color: #D6A33A;
+      font-style: normal;
+    }
+
+    .desc {
+      font-size: 18px;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.8;
+    }
+
+    /* Right side decoration */
+    .deco {
+      position: absolute;
+      right: 80px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+
+    .domain {
+      position: absolute;
+      right: 80px;
+      bottom: 40px;
+      font-size: 15px;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.08em;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="content">
+      <div class="logo-area">
+        <div class="logo-mark">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="52" height="52">
+            <path d="M 0,2 C 0,0 2,0 4,1 L 42,1 C 44,0 46,1 46,3 L 46,10 C 46,12 44,13 42,12 L 32,12 L 32,55 C 32,57 30,58 28,58 L 18,58 C 16,58 14,57 14,55 L 14,12 L 4,12 C 2,13 0,12 0,10 Z" fill="#D6A33A"/>
+            <path d="M 32,17 C 38,14 44,11 50,7 C 52,6 53,9 52,11 C 47,16 40,19 33,21 C 31,21 30,18 32,17 Z" fill="#D6A33A"/>
+            <path d="M 32,26 C 39,23 46,18 52,14 C 54,12 55,15 54,18 C 48,24 41,28 33,30 C 31,30 30,28 32,26 Z" fill="#D96E28"/>
+            <path d="M 32,35 C 40,31 48,25 54,20 C 56,18 57,22 56,25 C 49,32 42,37 33,39 C 31,39 30,37 32,35 Z" fill="#4A2618"/>
+          </svg>
+          <div>
+            <span class="logo-name">TriTail</span>
+            <span class="logo-sub">合同会社</span>
+          </div>
+        </div>
+      </div>
+
+      <span class="eyebrow">Disaster Preparedness &amp; IP Business</span>
+      <div class="title">
+        企業と地域の<br>「<em>もしも</em>」に備える。
+      </div>
+      <p class="desc">
+        防災備蓄ソリューションとIP事業を通じて、<br>
+        安心できる未来づくりを支援します。
+      </p>
+    </div>
+
+    <span class="domain">tritail.co.jp</span>
+  </div>
+</body>
+</html>

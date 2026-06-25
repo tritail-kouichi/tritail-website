@@ -1,0 +1,7 @@
+name = "tritail"
+main = "_worker.js"
+compatibility_date = "2026-06-24"
+
+[assets]
+directory = "."
+binding = "ASSETS"
