@@ -1,15 +1,33 @@
-# CLAUDE.md
+# TriTail コーポレートサイト 作業ルール
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+## このプロジェクトについて
+- TriTail合同会社（従業員3名）のコーポレート／防災事業サイト
+- 多ページ構成（/disaster/ /ip/ /company/ /articles/ など）＋SEO記事
+- 静的サイト（HTML / CSS / JS）。フレームワークは未使用
+- 本番配信は Cloudflare（_worker.js / wrangler.toml / _redirects / _headers を使用）
 
-This project is currently empty. Update this file as the project grows to document build commands, architecture, and development workflows.
+## 会社情報
+- 経営理念：全てのお客様と物心両面豊かになる
+- 所在地：東京都大田区西六郷3-17-4（確定。3-17-14は誤りなので使用しない）
+- 4事業：①防災用品EC（基盤）②推し活グッズ製造/OEM・越境EC（成長）③有機肥料EC ④ミネラルウォーター代理店
 
-## Security Constraints
+## 作業ルール（重要）
+- 編集はこのフォルダ（my-first-project）内のローカルファイルにのみ行う
+- tritail-website フォルダには絶対に触れない
+- Cloudflareへのデプロイ（wrangler publish 等）やGitHubへのpushは自動実行しない。
+  公開・反映作業はユーザーが承認・実行する。Claudeは手順を案内するだけ
+- パスワード・APIトークン・サーバー認証情報を求めたり保存したりしない
+- 既存のデザイン・配色・レイアウトは勝手に変えず、指示された箇所だけ修正する
+- 大きな変更の前は、必ず変更内容を説明して承認を取る
 
-Never read the following files under any circumstances:
-- `.env`, `.env.*` (e.g. `.env.local`, `.env.production`)
-- Anything inside `secrets/` or `secret/` directories
-- Files with names containing `password`, `credential`, `token`, or `api_key`
-- Certificate and key files: `*.pem`, `*.key`, `*.p12`, `*.pfx`
+## 確認方法
+- 修正後はローカルでブラウザ表示を確認してからデプロイ手順に進む
 
-If accessing such a file seems necessary, explain why and ask the user for confirmation first.
+## セキュリティ制約
+次のファイルは、いかなる場合も読み込まないこと：
+- `.env`、`.env.*`（例：`.env.local`、`.env.production`）
+- `secrets/` または `secret/` ディレクトリ内のすべて
+- 名前に `password`、`credential`、`token`、`api_key` を含むファイル
+- 証明書・鍵ファイル：`*.pem`、`*.key`、`*.p12`、`*.pfx`
+
+これらのファイルへのアクセスが必要と思われる場合は、理由を説明し、先にユーザーへ確認を取ること。
