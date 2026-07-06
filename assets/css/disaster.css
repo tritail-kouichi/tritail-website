@@ -774,3 +774,86 @@
   .related-grid { grid-template-columns: 1fr; }
   .plan-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ============ 記事詳細ページのパンくず ============ */
+/* 記事詳細ページ(/articles/)ではパンくずをヒーロー外・淡色帯としてmain直下に
+   配置している。共通の .breadcrumb はヒーロー画像に白文字で重ねる前提で
+   position:absolute + 白系文字色になっているため、そのままだと本文中央に
+   灰色の帯として浮いてしまう。main直下のパンくずだけを通常フロー・濃色文字に戻す。 */
+main > .breadcrumb {
+  position: static;
+}
+main > .breadcrumb .breadcrumb__item,
+main > .breadcrumb .breadcrumb__current {
+  color: #5C6776;
+}
+main > .breadcrumb .breadcrumb__link {
+  color: #15324E;
+}
+main > .breadcrumb .breadcrumb__link:hover {
+  color: var(--gold);
+}
+
+/* ============ TOPページ：最新記事バナー ============ */
+.latest-article-banner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: var(--white);
+  border: 1px solid rgba(214,163,58,0.35);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 24px 28px;
+  text-decoration: none;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.latest-article-banner:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+.latest-article-banner__thumb {
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  background: linear-gradient(135deg, var(--brown-dark) 0%, var(--brown) 100%);
+}
+.latest-article-banner__body { flex: 1; min-width: 0; }
+.latest-article-banner__eyebrow {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.latest-article-banner__title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--brown);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.latest-article-banner__excerpt {
+  font-size: 0.8125rem;
+  color: var(--text-sub);
+  line-height: 1.7;
+}
+.latest-article-banner__arrow {
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  color: var(--gold);
+  transition: transform var(--transition);
+}
+.latest-article-banner:hover .latest-article-banner__arrow {
+  transform: translateX(6px);
+}
+@media (max-width: 640px) {
+  .latest-article-banner { flex-wrap: wrap; }
+  .latest-article-banner__arrow { display: none; }
+}
