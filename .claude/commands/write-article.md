@@ -55,7 +55,7 @@ description: SEOキーワードから防災コラム記事(articles/)を1本自�
 `articles/{slug}/index.html` を新規作成する（既存ファイルは一切変更しない）。
 
 ### 5. 記事一覧ページを更新する
-[articles/index.html](../../articles/index.html) の `column-grid`（`<!-- 記事グリッド -->`以下）に、既存カードと同じ構造で新しいカードを1件追加する：
+[articles/index.html](../../articles/index.html) の `column-grid`（`<!-- 記事グリッド -->`直後）に、既存カードと同じ構造で新しいカードを1件追加する：
 
 ```html
 <a href="/articles/{slug}/" class="column-card">
@@ -69,9 +69,12 @@ description: SEOキーワードから防災コラム記事(articles/)を1本自�
 </a>
 ```
 
-`</div>`（column-gridの閉じタグ、`<!-- 無料ツールCTA -->`コメントの直前）の手前に追加すること。
+**重要：新しいカードは一覧の一番上（`<div id="all" class="column-grid" ...>` の開始直後、既存の最初のカードより前）に挿入すること。** 記事一覧は新しい順に並べる方針のため、末尾に追加してはならない。
 
-### 6. sitemap.xmlを更新する
+### 6. トップページの「最新記事」バナーを更新する
+[index.html](../../index.html) の `<!-- ===== LATEST ARTICLE ===== -->` セクション内、`.latest-article-banner` を新しい記事の内容に置き換える（`href`・絵文字・タイトル・要約をすべて新記事のものに更新する）。このバナーは常に最新1記事だけを指す。
+
+### 7. sitemap.xmlを更新する
 [sitemap.xml](../../sitemap.xml) の `<!-- /articles/ SEO articles -->` セクション内、最後の記事エントリの直後に新しい `<url>` を追加する：
 
 ```xml
@@ -83,7 +86,7 @@ description: SEOキーワードから防災コラム記事(articles/)を1本自�
 </url>
 ```
 
-### 7. 完了報告（重要）
+### 8. 完了報告（重要）
 作業完了後、以下を必ずユーザーに報告する：
 
 - 作成したファイルパス一覧（新規記事・更新した2ファイル）
