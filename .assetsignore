@@ -6,3 +6,6 @@ README.md
 .claude/
 docs/
 assets/images/ogp.html
+.git/
+.gitignore
+.wrangler/
