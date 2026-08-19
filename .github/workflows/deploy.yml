@@ -33,4 +33,8 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # ローカルでの動作確認済みバージョンに固定する。
+          # 未指定だと wrangler 3.90.0 が入り、.assetsignore が解釈されず
+          # .git/ などが公開対象に含まれてしまう（3.91.0 以降で対応）。
+          wranglerVersion: "4.104.0"
           command: deploy
