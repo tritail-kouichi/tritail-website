@@ -9,3 +9,7 @@ assets/images/ogp.html
 .git/
 .gitignore
 .wrangler/
+.github/
+node_modules/
+package.json
+package-lock.json
