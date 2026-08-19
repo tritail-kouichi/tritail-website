@@ -1023,6 +1023,23 @@ button { cursor: pointer; font-family: var(--font); border: none; background: no
   border: none;
 }
 
+/* ============ DECLARATION ============ */
+.declaration-figure {
+  max-width: 600px;
+  margin: 36px auto 0;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.declaration-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* ============ CONTACT FORM ============ */
 .contact-wrap {
   max-width: 780px;
