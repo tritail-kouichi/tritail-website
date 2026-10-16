@@ -857,3 +857,47 @@ main > .breadcrumb .breadcrumb__link:hover {
   .latest-article-banner { flex-wrap: wrap; }
   .latest-article-banner__arrow { display: none; }
 }
+
+/* ===== PRODUCTS（防災食品 商品紹介） ===== */
+.product-jump { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.product-jump__link {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--brown);
+  background: var(--white);
+  transition: var(--transition);
+}
+.product-jump__link:hover { background: var(--gold); color: var(--white); }
+.product-note { margin-top: 18px; font-size: 0.75rem; color: var(--text-sub); line-height: 1.7; }
+.product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 32px; }
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: var(--transition);
+}
+.product-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.product-card__thumb {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #fbf3e2, #f6e6c4);
+}
+.product-card__body { display: flex; flex-direction: column; flex: 1; padding: 16px; }
+.product-card__qty { font-size: 0.6875rem; font-weight: 700; color: var(--gold-dark); margin-bottom: 4px; }
+.product-card__title { font-size: 0.9375rem; font-weight: 700; color: var(--brown); line-height: 1.5; margin-bottom: 6px; }
+.product-card__text { font-size: 0.8125rem; color: var(--text-sub); line-height: 1.6; flex: 1; margin-bottom: 14px; }
+.product-card__btn { width: 100%; justify-content: center; text-align: center; }
+@media (max-width: 1024px) { .product-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px)  { .product-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px)  { .product-grid { grid-template-columns: 1fr; } }
